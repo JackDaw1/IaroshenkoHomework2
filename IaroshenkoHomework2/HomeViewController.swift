@@ -8,6 +8,8 @@
 import UIKit
 import SnapKit
 
+import OtusHomework
+
 public class HomeViewController: UIViewController {
     public override func viewDidLoad(){
         super.viewDidLoad()
@@ -19,5 +21,11 @@ public class HomeViewController: UIViewController {
 
               imageView.frame = CGRect(x: 0, y: 100, width: 400, height: 600)
               view.addSubview(imageView)
+    }
+}
+
+extension HomeViewCotroller: HasOtusHomeworkView {
+    public var squareView: UIView {
+        view
     }
 }

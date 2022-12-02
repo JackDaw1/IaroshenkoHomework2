@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEFC5B5CE3C9F1218722F6C5 /* Pods_IaroshenkoHomework2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459550EFC8F20090CAAA6F5A /* Pods_IaroshenkoHomework2.framework */; };
 		FEC39A4029390C8100948C72 /* IaroshenkoHomework2.h in Headers */ = {isa = PBXBuildFile; fileRef = FEC39A3F29390C8100948C72 /* IaroshenkoHomework2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEC39A4829390CAB00948C72 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FEC39A4729390CAB00948C72 /* SnapKit */; };
 		FEC39A4A29390CD700948C72 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC39A4929390CD700948C72 /* HomeViewController.swift */; };
 		FEC39A4C293A1DF900948C72 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC39A4B293A1DF900948C72 /* Media.xcassets */; };
+		FEC39A71293A7A0000948C72 /* OtusHomework in Frameworks */ = {isa = PBXBuildFile; productRef = FEC39A70293A7A0000948C72 /* OtusHomework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15E80C536AE18E5DB33A0851 /* Pods-IaroshenkoHomework2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IaroshenkoHomework2.release.xcconfig"; path = "Target Support Files/Pods-IaroshenkoHomework2/Pods-IaroshenkoHomework2.release.xcconfig"; sourceTree = "<group>"; };
+		459550EFC8F20090CAAA6F5A /* Pods_IaroshenkoHomework2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IaroshenkoHomework2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB0FFB0B305300C05B12FEB2 /* Pods-IaroshenkoHomework2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IaroshenkoHomework2.debug.xcconfig"; path = "Target Support Files/Pods-IaroshenkoHomework2/Pods-IaroshenkoHomework2.debug.xcconfig"; sourceTree = "<group>"; };
 		FEC39A3C29390C8100948C72 /* IaroshenkoHomework2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IaroshenkoHomework2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC39A3F29390C8100948C72 /* IaroshenkoHomework2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IaroshenkoHomework2.h; sourceTree = "<group>"; };
 		FEC39A4929390CD700948C72 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -26,17 +31,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEC39A4829390CAB00948C72 /* SnapKit in Frameworks */,
+				CEFC5B5CE3C9F1218722F6C5 /* Pods_IaroshenkoHomework2.framework in Frameworks */,
+				FEC39A71293A7A0000948C72 /* OtusHomework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		036C6254107BBA2F7AE6F515 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB0FFB0B305300C05B12FEB2 /* Pods-IaroshenkoHomework2.debug.xcconfig */,
+				15E80C536AE18E5DB33A0851 /* Pods-IaroshenkoHomework2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		369CAF5C9A5BBADD0AC995CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				459550EFC8F20090CAAA6F5A /* Pods_IaroshenkoHomework2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FEC39A3229390C8100948C72 = {
 			isa = PBXGroup;
 			children = (
 				FEC39A3E29390C8100948C72 /* IaroshenkoHomework2 */,
 				FEC39A3D29390C8100948C72 /* Products */,
+				036C6254107BBA2F7AE6F515 /* Pods */,
+				369CAF5C9A5BBADD0AC995CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEC39A4329390C8100948C72 /* Build configuration list for PBXNativeTarget "IaroshenkoHomework2" */;
 			buildPhases = (
+				EA0909FD4534007DAEB27E9D /* [CP] Check Pods Manifest.lock */,
 				FEC39A3729390C8100948C72 /* Headers */,
 				FEC39A3829390C8100948C72 /* Sources */,
 				FEC39A3929390C8100948C72 /* Frameworks */,
@@ -88,6 +115,7 @@
 			name = IaroshenkoHomework2;
 			packageProductDependencies = (
 				FEC39A4729390CAB00948C72 /* SnapKit */,
+				FEC39A70293A7A0000948C72 /* OtusHomework */,
 			);
 			productName = IaroshenkoHomework2;
 			productReference = FEC39A3C29390C8100948C72 /* IaroshenkoHomework2.framework */;
@@ -119,6 +147,7 @@
 			mainGroup = FEC39A3229390C8100948C72;
 			packageReferences = (
 				FEC39A4629390CAB00948C72 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				FEC39A6F293A7A0000948C72 /* XCRemoteSwiftPackageReference "OtusHomework" */,
 			);
 			productRefGroup = FEC39A3D29390C8100948C72 /* Products */;
 			projectDirPath = "";
@@ -139,6 +168,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EA0909FD4534007DAEB27E9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IaroshenkoHomework2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FEC39A3829390C8100948C72 /* Sources */ = {
@@ -274,6 +328,7 @@
 		};
 		FEC39A4429390C8100948C72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB0FFB0B305300C05B12FEB2 /* Pods-IaroshenkoHomework2.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +359,7 @@
 		};
 		FEC39A4529390C8100948C72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15E80C536AE18E5DB33A0851 /* Pods-IaroshenkoHomework2.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -363,6 +419,14 @@
 				minimumVersion = 5.6.0;
 			};
 		};
+		FEC39A6F293A7A0000948C72 /* XCRemoteSwiftPackageReference "OtusHomework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/NikkoGladkko/OtusHomework.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.9;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -370,6 +434,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FEC39A4629390CAB00948C72 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		FEC39A70293A7A0000948C72 /* OtusHomework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEC39A6F293A7A0000948C72 /* XCRemoteSwiftPackageReference "OtusHomework" */;
+			productName = OtusHomework;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

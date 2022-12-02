@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "otushomework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/NikkoGladkko/OtusHomework.git",
+      "state" : {
+        "revision" : "1ae346db9691a33c28fa8df3a7cc3c215d1c6b59",
+        "version" : "0.0.17"
+      }
+    },
+    {
       "identity" : "snapkit",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SnapKit/SnapKit.git",

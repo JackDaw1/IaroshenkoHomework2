@@ -92,6 +92,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.dependency 'SnapKit'
+  spec.dependency 'OtusHomework', :path => 'https://github.com/NikkoGladkko/OtusHomework.git'
   #spec.source_files  = "Classes", "Classes/**/*.{h,m}"
   spec.source_files  = "IaroshenkoHomework2/**/*.{swift,h,m}"
   #spec.exclude_files = "Classes/Exclude"
