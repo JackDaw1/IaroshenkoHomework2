@@ -8,30 +8,16 @@
 import UIKit
 import SnapKit
 
-class HomeViewController: UIViewController {
-    
-    override func viewDidLoad(){
-        /*
-        let imageName = "meme.jpeg"
-        let image = UIImage(named: imageName)
-        let imageView = UIImageView(image: image!)
+public class HomeViewController: UIViewController {
+    public override func viewDidLoad(){
+        super.viewDidLoad()
+              // Do any additional setup after loading the view.
+              
+              let currentBundle = Bundle(for: HomeViewController.self)
+              let image = UIImage(named: "meme", in: currentBundle, with: .none)
+              let imageView = UIImageView(image: image!)
 
-        //imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
-        view.addSubview(imageView)
-        */
-        let label = UILabel()
-        label.font = .systemFont(ofSize: 48, weight: .thin)
-        label.textColor = .white
-        label.numberOfLines = 0
-        label.text = "Galina"
-        
-        view.addSubview(label)
-        label.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.trailing.equalToSuperview().offset(-32.0)
-            make.leading.equalToSuperview().offset(32.0)
-        }
-        
-        view.backgroundColor = .red
+              imageView.frame = CGRect(x: 0, y: 100, width: 400, height: 600)
+              view.addSubview(imageView)
     }
 }
