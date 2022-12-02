@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "IaroshenkoHomework2"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "IaroshenkoHomework2 module for demonstration"
 
   # This description is used to generate tags and improve search results.
