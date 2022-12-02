@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "IaroshenkoHomework2"
   spec.version      = "0.0.1"
-  spec.summary      = "IaroshenkoHomework module for demonstration"
+  spec.summary      = "IaroshenkoHomework2 module for demonstration"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+	This is IaroshenkoHomework2 module for demonstration	
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/IaroshenkoHomework2"
+  spec.homepage     = "https://github.com/JackDaw1/IaroshenkoHomework2"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -64,7 +65,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+  spec.platform     = :ios, "13.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -79,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/IaroshenkoHomework2.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/JackDaw1/IaroshenkoHomework2.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,10 +91,13 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.dependency 'SnapKit'
+  #spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  spec.source_files  = "IaroshenkoHomework2/**/*.{swift,h,m}"
+  #spec.exclude_files = "Classes/Exclude"
 
-  # spec.public_header_files = "Classes/**/*.h"
+  spec.public_header_files = "IaroshenkoHomework2/**/*.{h}"
+  spec.swift_version = "5.0"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
