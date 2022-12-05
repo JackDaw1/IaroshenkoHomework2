@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "IaroshenkoHomework2"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "IaroshenkoHomework2 module for demonstration"
 
   # This description is used to generate tags and improve search results.
@@ -92,7 +92,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.dependency 'SnapKit'
-  spec.dependency 'OtusHomework', :path => 'https://github.com/NikkoGladkko/OtusHomework.git'
+  spec.dependency 'OtusHomework'
   #spec.source_files  = "Classes", "Classes/**/*.{h,m}"
   spec.source_files  = "IaroshenkoHomework2/**/*.{swift,h,m}"
   #spec.exclude_files = "Classes/Exclude"
