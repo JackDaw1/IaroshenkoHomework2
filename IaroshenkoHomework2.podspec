@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "IaroshenkoHomework2"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "IaroshenkoHomework2 module for demonstration"
 
   # This description is used to generate tags and improve search results.
@@ -111,6 +111,7 @@ Pod::Spec.new do |spec|
 
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
+spec.resources = "Media.xcassets/**/*.{pdf,svg,json,jpg,jpeg,xcassets,storyboard,xib,strings,stringsdict}"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
